@@ -34,7 +34,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
    Email:<br>
    <input type="text" name="email" value="Email" class="identity">
    <br><br>
-   <button type="button">Submit</button>
+   <button type="submit">Submit</button>
  </form>
  <div class="not_standart_form"></div>
 </div>
@@ -42,7 +42,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 
 <script>
     // script for testing trackSubmit snippet
-    _kmq.push(['trackSubmit', '#test_standart_form', 'Submitted Standart Form', {"name":".name", 
-        "surname": ".surname", "email": ".identity"}]);
+    _kmq.push(['trackSubmit', '#test_standart_form', 'Submitted Standart Form', {"name":$('.name').val(), 
+        "surname": $('.surname').val(), "email": $('.identity').val()}]);
 </script>
 </html>
