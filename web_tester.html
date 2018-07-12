@@ -36,13 +36,37 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
    <br><br>
    <button type="submit">Submit</button>
  </form>
- <div class="not_standart_form"></div>
+ <div class="not_standart_form">
+     <h2 style="text-align: center">The part for not standart form</h2>
+     <form id="test_not_standart_form">
+        <div>
+                <input type="hidden" name="page" value="Newsletter" />
+                <input type="hidden" name="source" value="website" />
+            <div class="form-item form-type-textfield form-item-honey">
+                <input class="honey form-text" type="text" id="edit-honey" name="honey" value="" size="60" maxlength="128" />
+            </div>
+            <div class="form-item form-type-textfield form-item-email">
+                <label for="edit-email"><p><strong>Stay connected.</strong> We'll send you exclusive email updates and opportunities to take action.</p>
+                </label>
+            <input placeholder="your@email.address" type="text" id="edit-email" name="email" value="" class="form-text" />
+            </div>
+            <input type="submit" id="edit-submit" name="op" value="Sign up" class="form-submit" />
+            <input type="hidden" name="form_build_id" value="form-7xCCHQa2AIbUQEBS546D_Bmh5BLcW_rPq67jzNRQQ_8" />
+            <input type="hidden" name="form_id" value="newsletter_signup" />
+            <div class="url-textfield">
+                <div class="form-item form-type-textfield form-item-url">
+                    <label for="edit-url">Leave this field blank </label>
+                    <input autocomplete="off" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text" />
+                </div>
+            </div>
+        </div>
+    </form>
+ </div>
 </div>
 </body>
 
 <script>
     // script for testing trackSubmit snippet
-    _kmq.push(['trackSubmit', '#test_standart_form', 'Submitted Standart Form', {"name":$('.name').val(), 
-        "surname": $('.surname').val(), "email": $('.identity').val()}]);
+    _kmq.push(['trackSubmit', '#test_standart_form', 'Submitted Standart Form']);
 </script>
 </html>
