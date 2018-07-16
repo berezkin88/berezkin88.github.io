@@ -16,6 +16,13 @@ _kms('//i.kissmetrics.com/i.js');
 _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<style>
+    h2: { text-align: center; }
+    .url-textfield { visibility: hidden; }
+    .form-item-honey { display: none; }
+    .left_part { background-color: green; }
+    .left_part { background-color: green;}
+</style>
 </head>
 <body>
 <h1>Some header</h1>
@@ -23,7 +30,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 <a href="https://ppc-maker.com/?kmi=Alex_B&utm_source=test&utm_medium=blog&utm_campaign=test&utm_content=test">Test link</a>
 <br><br>
 <div class="standart_form">
-    <h2 style="text-align: center">The part for standart form</h2>
+    <h2>The part for standart form</h2>
  <form id="test_standart_form">
    First name:<br>
    <input type="text" name="firstname" value="First name" class="name">
@@ -36,13 +43,14 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
    <br><br>
    <button type="submit">Submit</button>
  </form>
+ </div>
  <div class="not_standart_form">
-     <h2 style="text-align: center">The part for not standart form</h2>
+     <h2>The part for not standart form</h2>
      <form action="index.html" id="test_not_standart_form">
         <div>
                 <input type="hidden" name="page" value="Newsletter" />
                 <input type="hidden" name="source" value="website" />
-            <div class="form-item form-type-textfield form-item-honey" style="display: none">
+            <div class="form-item form-type-textfield form-item-honey">
                 <input class="honey form-text" type="text" id="edit-honey" name="honey" value="" size="60" maxlength="128" />
             </div>
             <div class="form-item form-type-textfield form-item-email">
@@ -53,7 +61,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
             <input type="submit" id="edit-submit" name="op" value="Sign up" class="form-submit" />
             <input type="hidden" name="form_build_id" value="form-7xCCHQa2AIbUQEBS546D_Bmh5BLcW_rPq67jzNRQQ_8" />
             <input type="hidden" name="form_id" value="newsletter_signup" />
-            <div class="url-textfield" style="visibility: hidden">
+            <div class="url-textfield">
                 <div class="form-item form-type-textfield form-item-url">
                     <label for="edit-url">Leave this field blank </label>
                     <input autocomplete="off" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text" />
@@ -62,7 +70,10 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
         </div>
     </form>
  </div>
-</div>
+ <div class="part-for-the-test-buttons">
+     <div class="left_part"></div>
+     <div class="right_part"></div>
+ </div>
 </body>
 
 <script>
