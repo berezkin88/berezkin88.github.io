@@ -20,8 +20,31 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     h2: { text-align: center; }
     .url-textfield { visibility: hidden; }
     .form-item-honey { display: none; }
-    .left_part { background-color: green; }
-    .left_part { background-color: green;}
+    .part-for-the-test-buttons {
+        display: flex;
+    }
+    .right_part { 
+        background: red; 
+        width: 50%;
+        height: 100px;
+    }
+    .left_part { 
+        background: green; 
+        width: 50%;
+        height: 100px;
+    }
+    #right {
+        transform: translate( -50%, -50%);
+        position: relative;
+        left: 50%;
+        top: 50%;
+    }
+    .button {
+        transform: translate( -50%, -50%);
+        position: relative;
+        left: 50%;
+        top: 50%;
+    }
 </style>
 </head>
 <body>
@@ -71,8 +94,12 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     </form>
  </div>
  <div class="part-for-the-test-buttons">
-     <div class="left_part"></div>
-     <div class="right_part"></div>
+     <div class="left_part">
+         <button class="left button">Left button</button>
+     </div>
+     <div class="right_part">
+         <button id="right">Right button</button>
+     </div>
  </div>
 </body>
 
