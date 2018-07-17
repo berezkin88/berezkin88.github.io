@@ -106,7 +106,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
      </div>
  </div>
  
- <div class="testing_div_clicks">
+ <div class="testing_div_clicks" onclick="func()">
      <div class="middle_div">
          <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_a">Test link div 1</div>
      </div>
@@ -122,5 +122,10 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 <script>
     // script for testing trackSubmit snippet with not standart form
     _kmq.push(['trackSubmit', '#test_not_standart_form', 'Submitted Not Standart Form']);
+</script>
+<script>
+    // function func() {
+    //     alert("hello");
+    // }
 </script>
 </html>
