@@ -49,6 +49,11 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
         padding: 20px 10px;
         cursor: pointer;
     }
+    .testing_em_property {
+        display: flex;
+        position: absolute;
+        margin: 0 20px;
+    }
 </style>
 </head>
 <body>
@@ -118,15 +123,22 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
  <br>
  <br>
  <div class="testing_em_property">
-     Some text here <br>
-     <input type="text" name="some text" class="some_prop_1" id="some_prop_1" value="default value">
-     <p class="some_prop_2" id="some_prop_2">This is the second value</p>
-     <select class="some_prop_3" id="some_prop_3">
-         <option value="first" selected>first</option>
-         <option value="second">second</option>
-         <option value="third">third</option>
-     </select>
-     <button class="testing_em_property_button">Push me!</button>
+     <div class="first column">
+         Some text here <br>
+         <input type="text" name="some text" class="some_prop_1" id="some_prop_1" value="default value">
+         <p class="some_prop_2 prp_1" id="some_prop_2">This is the second value</p>
+         <select class="some_prop_3" id="some_prop_3">
+             <option value="first" selected>first</option>
+             <option value="second">second</option>
+             <option value="third">third</option>
+         </select>
+         <button class="testing_em_property_button btn_1">Push me!</button>
+     </div>
+     <div class="second" style="margin-left: 20px">
+         <p class="some_prop_2 prp_2" id="some_prop_2">This is the second value too</p>
+         <button class="testing_em_property_button btn_2">Push me!</button>
+     </div>
+     
  </div>
  
 </body>
