@@ -172,6 +172,10 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
      </div>
      
  </div>
+    
+ <div>
+     <button id="test_action">Action test</button>
+ </div>
  
 </body>
 
@@ -182,6 +186,11 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 <script>
     // script for testing trackSubmit snippet with not standart form
     // _kmq.push(['trackSubmit', '#test_not_standart_form', 'Submitted Not Standart Form']);
+</script>
+<script>
+    _kmq.push(function(){
+        document.getElementById('test_action').action="http://trk.kissmetrics.com/e?_k=8291b5447404fc4f781662cb88734267858dfb33&_p=" + encodeURIComponent(KM.i()) + "&_n=test+action+function";
+    });
 </script>
 <script>
     // function func() {
