@@ -18,6 +18,10 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <style>
     h2 { text-align: center; }
+    div {
+        display: block;
+        position: relative;
+    }
     .url-textfield { visibility: hidden; }
     .form-item-honey { display: none; }
     .part-for-the-test-buttons {
@@ -51,8 +55,8 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     }
     .testing_em_property {
         display: flex;
-        position: absolute;
-        margin: 0 20px;
+        position: inherit;
+        margin: 20px 20px;
     }
 </style>
 </head>
@@ -174,6 +178,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
  </div>
     
  <div class="test_action">
+     <h2>Here is the next section</h2>
      <button id="test_action">Action test</button>
  </div>
  
