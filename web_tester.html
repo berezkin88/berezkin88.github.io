@@ -17,11 +17,10 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script>
-    $(document).ready(function() {
+    setTimeout(function() {
         let newUrl = $("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i());
-        $("#test-link").attr("href", newUrl);
-        
-    })
+        $("#test-link").attr("href", newUrl)
+    }, 1000);
 </script>
 <style>
     h2 { text-align: center; }
