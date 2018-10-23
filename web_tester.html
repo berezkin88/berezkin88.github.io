@@ -194,10 +194,15 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     // _kmq.push(['trackSubmit', '#test_not_standart_form', 'Submitted Not Standart Form']);
 </script>
 <script>
-    $('#test_action').click(function() {
-        alert($("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i()));
-    }
-        )
+    $(document).ready(function() {
+        let newUrl = $("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i());
+        $("#test-link").attr("href", newUrl);
+        
+    })
+    
+    $("#test_action").click(function(){
+        alert($("#test-link").attr("href"));
+    })
 </script>
 <script>
     // function func() {
