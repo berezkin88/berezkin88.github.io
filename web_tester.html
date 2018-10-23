@@ -180,6 +180,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
  <div class="test_action">
      <h2>Here is the next section</h2>
      <button id="test_action">Action test</button>
+     <a href="https://berezkin88.github.io/web_tester.html" id="test-link">This is the not the link</a>
  </div>
  
 </body>
@@ -193,9 +194,10 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     // _kmq.push(['trackSubmit', '#test_not_standart_form', 'Submitted Not Standart Form']);
 </script>
 <script>
-    _kmq.push(function(){
-        document.getElementById('test_action').action="http://trk.kissmetrics.com/e?_k=8291b5447404fc4f781662cb88734267858dfb33&_p=" + encodeURIComponent(KM.i()) + "&_n=test+action+function";
-    });
+    $('#test_action').click(function() {
+        alert($("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i()));
+    }
+        )
 </script>
 <script>
     // function func() {
