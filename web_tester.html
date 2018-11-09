@@ -14,6 +14,8 @@ function _kms(u){
 }
 _kms('//i.kissmetrics.com/i.js');
 _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+
+
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script>
@@ -24,6 +26,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 </script>
 <style>
     h2 { text-align: center; }
+    
     div {
         display: block;
         position: relative;
@@ -63,6 +66,20 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
         display: flex;
         position: inherit;
         margin: 20px 20px;
+    }
+    .three_columns_with_links {
+        margin: 20px;
+        display: flex;
+    }
+    #for_testing_virtual_classes{
+        width: 33%;
+        height: 150px;
+    }
+    #button_alike{
+        width: 100px;
+        height: 50px;
+        left: 50%;
+        background: aqua;
     }
 </style>
 </head>
@@ -187,6 +204,25 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
      <h2>Here is the next section</h2>
      <button id="test_action">Action test</button>
      <a href="https://berezkin88.github.io/web_tester.html" id="test-link">This is the not the link</a>
+ </div>
+ 
+ <h2 align="center">Test section... another next</h2>
+ <div class="three_columns_with_links">
+     <div class="first_column" id="for_testing_virtual_classes">
+         <div id="button_alike">
+             <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
+         </div>
+     </div>
+     <div class="second_column" id="for_testing_virtual_classes">
+         <div id="button_alike">
+             <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
+         </div>
+     </div>
+     <div class="third_column" id="for_testing_virtual_classes">
+         <div id="button_alike">
+             <a href="#kmi=" class="this_is_some_class_identifier">This is the link</a>
+         </div>
+     </div>
  </div>
  
 </body>
