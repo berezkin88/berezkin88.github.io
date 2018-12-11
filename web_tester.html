@@ -15,15 +15,12 @@ function _kms(u){
 _kms('//i.kissmetrics.com/i.js');
 _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 
-
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script>
-    setTimeout(function() {
+    if(this.href.indexOf("&kmi") > -1) {
         let newUrl = $("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i());
         $("#test-link").attr("href", newUrl)
-    }, 1000);
+    }
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <style>
     h2 { text-align: center; }
     
@@ -203,7 +200,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
  <div class="test_action">
      <h2>Here is the next section</h2>
      <button id="test_action">Action test</button>
-     <a href="https://berezkin88.github.io/web_tester.html" id="test-link">This is the not the link</a>
+     <a href="https://berezkin88.github.io/web_tester.html" id="test-link">This is not the link</a>
  </div>
  
  <h2 align="center">Test section... another next</h2>
@@ -220,7 +217,7 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
      </div>
      <div class="third_column" id="for_testing_virtual_classes">
          <div id="button_alike">
-             <a href="#kmi=" class="this_is_some_class_identifier">This is the link</a>
+             <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
          </div>
      </div>
  </div>
