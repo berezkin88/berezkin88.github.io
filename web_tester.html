@@ -15,18 +15,13 @@ function _kms(u){
 _kms('//i.kissmetrics.com/i.js');
 _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 
-let newUrl = $("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i());
+_kmq.push(function() {
+                  let newUrl = $("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i());
+                  $("#test-link").attr("href", newUrl)
+          })
 $("#test-link").attr("href", newUrl)
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script>
-    setTimeout(function() {
-        if($("#test-link").attr("href").indexOf("&kmi") > -1) {
-            let newUrl = $("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i());
-            $("#test-link").attr("href", newUrl)
-        }
-    }, 1000);
-</script>
 <style>
     h2 { text-align: center; }
     
