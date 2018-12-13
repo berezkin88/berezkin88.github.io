@@ -1,247 +1,280 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Test page</title>
-<script type="text/javascript">var _kmq = _kmq || [];
-var _kmk = _kmk || '8291b5447404fc4f781662cb88734267858dfb33';
-function _kms(u){
-  setTimeout(function(){
-    var d = document, f = d.getElementsByTagName('script')[0],
-    s = d.createElement('script');
-    s.type = 'text/javascript'; s.async = true; s.src = u;
-    f.parentNode.insertBefore(s, f);
-  }, 1);
-}
-_kms('//i.kissmetrics.com/i.js');
-_kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
-
-_kmq.push(function() {
-                  let links1 = document.getElementsByClassName("this_is_some_class_identifier");
-                  for (let i = 0; i < links1.length; i++) {
-                      links1[i].setAttribute("href", links1[i] + encodeURIComponent(KM.i()))
-                  }
-          })
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<style>
-    h2 { text-align: center; }
-    
-    div {
-        display: block;
-        position: relative;
-    }
-    .url-textfield { visibility: hidden; }
-    .form-item-honey { display: none; }
-    .part-for-the-test-buttons {
-        display: flex;
-    }
-    .right_part { 
-        background: red; 
-        width: 50%;
-        height: 100px;
-    }
-    .left_part { 
-        background: green; 
-        width: 50%;
-        height: 100px;
-    }
-    #right {
-        transform: translate( -50%, -50%);
-        position: relative;
-        left: 50%;
-        top: 50%;
-    }
-    .button {
-        transform: translate( -50%, -50%);
-        position: relative;
-        left: 50%;
-        top: 50%;
-    }
-    .testing_div_clicks>div {
-        padding: 20px 10px;
-        cursor: pointer;
-    }
-    .testing_em_property {
-        display: flex;
-        position: inherit;
-        margin: 20px 20px;
-    }
-    .three_columns_with_links {
-        margin: 20px;
-        display: flex;
-    }
-    #for_testing_virtual_classes{
-        width: 33%;
-        height: 150px;
-    }
-    #button_alike{
-        width: 100px;
-        height: 50px;
-        left: 50%;
-        background: aqua;
-    }
-</style>
-</head>
-<body>
+    <head>
+        <title>Test page</title>
+        <script type="text/javascript">
+            var _kmq = _kmq || [];
+            var _kmk = _kmk || '8291b5447404fc4f781662cb88734267858dfb33';
+            function _kms(u){
+              setTimeout(function(){
+                var d = document, f = d.getElementsByTagName('script')[0],
+                s = d.createElement('script');
+                s.type = 'text/javascript'; s.async = true; s.src = u;
+                f.parentNode.insertBefore(s, f);
+              }, 1);
+            }
+            _kms('//i.kissmetrics.com/i.js');
+            _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+            
+            
+                              let links1 = document.getElementsByClassName("this_is_some_class_identifier");
+                              for (let i = 0; i < links1.length; i++) {
+                                  links1[i].setAttribute("href", links1[i] + encodeURIComponent(KM.i()))
+                              }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <style>
+            h2 { text-align: center; }
+            
+            div {
+                display: block;
+                position: relative;
+            }
+            .url-textfield { visibility: hidden; }
+            .form-item-honey { display: none; }
+            .part-for-the-test-buttons {
+                display: flex;
+            }
+            .right_part { 
+                background: red; 
+                width: 50%;
+                height: 100px;
+            }
+            .left_part { 
+                background: green; 
+                width: 50%;
+                height: 100px;
+            }
+            #right {
+                transform: translate( -50%, -50%);
+                position: relative;
+                left: 50%;
+                top: 50%;
+            }
+            .button {
+                transform: translate( -50%, -50%);
+                position: relative;
+                left: 50%;
+                top: 50%;
+            }
+            .testing_div_clicks>div {
+                padding: 20px 10px;
+                cursor: pointer;
+            }
+            .testing_em_property {
+                display: flex;
+                position: inherit;
+                margin: 20px 20px;
+            }
+            .three_columns_with_links {
+                margin: 20px;
+                display: flex;
+            }
+            #for_testing_virtual_classes{
+                width: 33%;
+                height: 150px;
+            }
+            #button_alike{
+                width: 100px;
+                height: 50px;
+                left: 50%;
+                background: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        
 <h1>Some header</h1>
-<p>This is the test page for testing link for utm_source=blog</p>
-<a href="https://ppc-maker.com/?kmi=Alex_B&utm_source=test&utm_medium=blog&utm_campaign=test&utm_content=test">Test link</a>
-<br><br>
-<div class="standart_form">
-    <h2 class="test">The part for standart form</h2>
- <form id="test_standart_form">
-   First name:<br>
-   <input type="text" name="firstname" value="First name" class="name">
-   <br>
-   Last name:<br>
-   <input type="text" name="lastname" value="Last name" class="surname">
-   <br>
-   Email:<br>
-   <input type="text" name="email" value="Email" class="identity">
-   <br><br>
-   <button type="submit">Submit</button>
- </form>
- </div>
- <div class="not_standart_form">
-     <h2>The part for not standart form</h2>
-     <form action="index.html" id="test_not_standart_form">
-        <div><input id="utf8" type="hidden" name="utf8" value="✔">
-        <input id="source" type="hidden" name="source" value="">
-        <input id="mailing_id" type="hidden" name="mailing_id" value="">
-        <!-- AK page short_name --><input id="page" type="hidden" name="page" value="2">
-        <input type="hidden" name="nid" value="36522">
-        <input id="opt_in" type="hidden" name="opt_in" value="1">
-        <input id="action_nid" type="hidden" name="action_nid" value="36522">
-        <fieldset id="your_information" class="inactive_step petition_step form-wrapper"><div class="fieldset-wrapper"><div id="edit-open-list" class="form-item form-type-item">
-         <h2>Take action</h2>
-        </div>
-        <div id="edit-messages" class="form-item form-type-item">
-         
-        </div>
-        <ol><li class=""><div class="form-item form-type-textfield form-item-first-name">
-          <label for="edit-first-name">First name <span class="form-required" title="This field is required.">*</span></label>
-         <input id="first_name" class="form-text required" placeholder="" type="text" name="first_name" value="" size="20" maxlength="128">
-        </div>
-        </li><li class=""><div class="form-item form-type-textfield form-item-last-name">
-          <label for="edit-last-name">Last name <span class="form-required" title="This field is required.">*</span></label>
-         <input id="last_name" class="form-text required" placeholder="" type="text" name="last_name" value="" size="20" maxlength="128">
-        </div>
-        </li><li class=""><div class="form-item form-type-textfield form-item-email">
-          <label for="edit-email--2">Email <span class="form-required" title="This field is required.">*</span></label>
-         <input id="email" class="form-text required" placeholder="" type="text" name="email" value="" size="20" maxlength="128">
-        </div>
-        </li><li class=""><div class="form-item form-type-textfield form-item-address1">
-          <label for="edit-address1">Address <span class="form-required" title="This field is required.">*</span></label>
-         <input id="address1" class="form-text required" placeholder="" type="text" name="address1" value="" size="20" maxlength="128">
-        </div>
-        </li><li class="us_billing_fields"><div class="form-item form-type-textfield form-item-zip">
-          <label for="edit-zip">Zip <span class="form-required" title="This field is required.">*</span></label>
-         <input id="zip" class="form-text required" placeholder="" type="text" name="zip" value="" size="20" maxlength="128">
-        </div>
-        </li><li class=""><div class="form-item form-type-textarea form-item-action-comment">
-          <label for="edit-action-comment">Comments </label>
-         <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="action_comment" class="form-textarea" placeholder="" rows="2" name="action_comment" cols="60"></textarea><div class="grippie"></div></div>
-        </div>
-        </li><input id="country" type="hidden" name="country" value="United States">
-        <li class="email-opt-in"><div class="form-item form-type-checkbox form-item-email-opt-in">
-         <input id="email_opt_in" type="checkbox" name="email_opt_in" value="1" checked="checked" class="form-checkbox"> 
-        </div>
-        <label for="email_opt_in">Yes! I want to receive exclusive email updates from Mercy Corps, and important opportunities to take action and save lives.</label></li><li class="align_center"
-        ><input id="real_submit" class="petitionbutton  align_top form-submit ajax-processed" type="submit" name="op" value="Send my letter"></li></ol><div id="edit-close-list" class="form-item form-type-item">
-         
-        </div>
-        </div></fieldset>
-        <input type="hidden" name="form_build_id" value="form-KDUabTj09v0oNh8IwRecqIOhtYAkXk7Ew73fbzRrghA">
-        <input type="hidden" name="form_id" value="mc_petition_form">
-        <div class="url-textfield"><div class="form-item form-type-textfield form-item-url">
-          <label for="edit-url--2">Leave this field blank </label>
-         <input autocomplete="off" type="text" id="edit-url--2" name="url" value="" size="20" maxlength="128" class="form-text">
-        </div>
-        </div></div>
-    </form>
- </div>
- <div class="part-for-the-test-buttons">
-     <div class="left_part">
-         <button class="left button test">Left button</button>
-     </div>
-     <div class="right_part">
-         <button id="right" class="right">Right button</button>
-     </div>
- </div>
- 
- <div class="testing_div_clicks test">
-     <div class="middle_div">
-         <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_a">Test link div 1</div>
-     </div>
-     <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_b">Test link div 2</div>
-     <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_c">Test link div 3</div>
- </div>
- <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_d">Test link div 4</div>
- <br>
- <br>
- <br>
- <div class="testing_em_property">
-     <div class="first column">
-         Some text here <br>
-         <input type="text" name="some text" class="some_prop_1" id="some_prop_1" value="default value">
-         <p class="some_prop_2 prp_1" id="some_prop_2">This is the second value</p>
-         <select class="some_prop_3" id="some_prop_3">
-             <option value="first" selected>first</option>
-             <option value="second">second</option>
-             <option value="third">third</option>
-         </select>
-         <button class="testing_em_property_button btn_1">Push me!</button>
-     </div>
-     <div class="second" style="margin-left: 20px">
-         <p class="some_prop_2 prp_2" id="some_prop_2">This is the second value too</p>
-         <button class="testing_em_property_button btn_2">Push me!</button>
-     </div>
-     
- </div>
-    
- <div class="test_action">
-     <h2>Here is the next section</h2>
-     <button id="test_action">Action test</button>
-     <a href="https://berezkin88.github.io/web_tester.html" id="test-link">This is the not the link</a>
- </div>
- 
- <h2 align="center">Test section... another next</h2>
- <div class="three_columns_with_links">
-     <div class="first_column" id="for_testing_virtual_classes">
-         <div id="button_alike">
-             <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
-         </div>
-     </div>
-     <div class="second_column" id="for_testing_virtual_classes">
-         <div id="button_alike">
-             <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
-         </div>
-     </div>
-     <div class="third_column" id="for_testing_virtual_classes">
-         <div id="button_alike">
-             <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
-         </div>
-     </div>
- </div>
- 
-</body>
 
-<script>
-    // script for testing trackSubmit snippet with standart form
-    _kmq.push(['trackSubmit', '#test_standart_form', 'Submitted Standart Form']);
-</script>
-<script>
-    // script for testing trackSubmit snippet with not standart form
-    // _kmq.push(['trackSubmit', '#test_not_standart_form', 'Submitted Not Standart Form']);
-</script>
-<script>
-    $("#test_action").click(function(){
-        alert($("#test-link").attr("href"));
-    })
-</script>
-<script>
-    // function func() {
-    //     alert("hello");
-    // }
-</script>
+        <p>This is the test page for testing link for utm_source=blog</p>
+        <a href="https://ppc-maker.com/?kmi=Alex_B&utm_source=test&utm_medium=blog&utm_campaign=test&utm_content=test">Test link</a>
+        <br>
+        <br>
+        <div class="standart_form">
+             <h2 class="test">The part for standart form</h2>
+
+            <form id="test_standart_form">First name:
+                <br>
+                <input type="text" name="firstname" value="First name" class="name">
+                <br>Last name:
+                <br>
+                <input type="text" name="lastname" value="Last name" class="surname">
+                <br>Email:
+                <br>
+                <input type="text" name="email" value="Email" class="identity">
+                <br>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="not_standart_form">
+             <h2>The part for not standart form</h2>
+
+            <form action="index.html" id="test_not_standart_form">
+                <div>
+                    <input id="utf8" type="hidden" name="utf8" value="✔">
+                    <input id="source" type="hidden" name="source" value="">
+                    <input id="mailing_id" type="hidden" name="mailing_id" value="">
+                    <!-- AK page short_name -->
+                    <input id="page" type="hidden" name="page" value="2">
+                    <input type="hidden" name="nid" value="36522">
+                    <input id="opt_in" type="hidden" name="opt_in" value="1">
+                    <input id="action_nid" type="hidden" name="action_nid" value="36522">
+                    <fieldset id="your_information" class="inactive_step petition_step form-wrapper">
+                        <div class="fieldset-wrapper">
+                            <div id="edit-open-list" class="form-item form-type-item">
+                                 <h2>Take action</h2>
+
+                            </div>
+                            <div id="edit-messages" class="form-item form-type-item"></div>
+                            <ol>
+                                <li class="">
+                                    <div class="form-item form-type-textfield form-item-first-name">
+                                        <label for="edit-first-name">First name <span class="form-required" title="This field is required.">*</span>
+                                        </label>
+                                        <input id="first_name" class="form-text required" placeholder="" type="text" name="first_name" value="" size="20" maxlength="128">
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="form-item form-type-textfield form-item-last-name">
+                                        <label for="edit-last-name">Last name <span class="form-required" title="This field is required.">*</span>
+                                        </label>
+                                        <input id="last_name" class="form-text required" placeholder="" type="text" name="last_name" value="" size="20" maxlength="128">
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="form-item form-type-textfield form-item-email">
+                                        <label for="edit-email--2">Email <span class="form-required" title="This field is required.">*</span>
+                                        </label>
+                                        <input id="email" class="form-text required" placeholder="" type="text" name="email" value="" size="20" maxlength="128">
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="form-item form-type-textfield form-item-address1">
+                                        <label for="edit-address1">Address <span class="form-required" title="This field is required.">*</span>
+                                        </label>
+                                        <input id="address1" class="form-text required" placeholder="" type="text" name="address1" value="" size="20" maxlength="128">
+                                    </div>
+                                </li>
+                                <li class="us_billing_fields">
+                                    <div class="form-item form-type-textfield form-item-zip">
+                                        <label for="edit-zip">Zip <span class="form-required" title="This field is required.">*</span>
+                                        </label>
+                                        <input id="zip" class="form-text required" placeholder="" type="text" name="zip" value="" size="20" maxlength="128">
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="form-item form-type-textarea form-item-action-comment">
+                                        <label for="edit-action-comment">Comments</label>
+                                        <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                                            <textarea id="action_comment" class="form-textarea" placeholder="" rows="2" name="action_comment" cols="60"></textarea>
+                                            <div class="grippie"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <input id="country" type="hidden" name="country" value="United States">
+                                <li class="email-opt-in">
+                                    <div class="form-item form-type-checkbox form-item-email-opt-in">
+                                        <input id="email_opt_in" type="checkbox" name="email_opt_in" value="1" checked="checked" class="form-checkbox">
+                                    </div>
+                                    <label for="email_opt_in">Yes! I want to receive exclusive email updates from Mercy Corps, and important opportunities to take action and save lives.</label>
+                                </li>
+                                <li class="align_center">
+                                    <input id="real_submit" class="petitionbutton  align_top form-submit ajax-processed" type="submit" name="op" value="Send my letter">
+                                </li>
+                            </ol>
+                            <div id="edit-close-list" class="form-item form-type-item"></div>
+                        </div>
+                    </fieldset>
+                    <input type="hidden" name="form_build_id" value="form-KDUabTj09v0oNh8IwRecqIOhtYAkXk7Ew73fbzRrghA">
+                    <input type="hidden" name="form_id" value="mc_petition_form">
+                    <div class="url-textfield">
+                        <div class="form-item form-type-textfield form-item-url">
+                            <label for="edit-url--2">Leave this field blank</label>
+                            <input autocomplete="off" type="text" id="edit-url--2" name="url" value="" size="20" maxlength="128" class="form-text">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="part-for-the-test-buttons">
+            <div class="left_part">
+                <button class="left button test">Left button</button>
+            </div>
+            <div class="right_part">
+                <button id="right" class="right">Right button</button>
+            </div>
+        </div>
+        <div class="testing_div_clicks test">
+            <div class="middle_div">
+                <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_a">Test link div 1</div>
+            </div>
+            <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_b">Test link div 2</div>
+            <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_c">Test link div 3</div>
+        </div>
+        <div class="with_a_very_long_class_name_for_testing_purposes_that_i_need_to_fill_out_with_letters_d">Test link div 4</div>
+        <br>
+        <br>
+        <br>
+        <div class="testing_em_property">
+            <div class="first column">Some text here
+                <br>
+                <input type="text" name="some text" class="some_prop_1" id="some_prop_1" value="default value">
+                <p class="some_prop_2 prp_1" id="some_prop_2">This is the second value</p>
+                <select class="some_prop_3" id="some_prop_3">
+                    <option value="first" selected>first</option>
+                    <option value="second">second</option>
+                    <option value="third">third</option>
+                </select>
+                <button class="testing_em_property_button btn_1">Push me!</button>
+            </div>
+            <div class="second" style="margin-left: 20px">
+                <p class="some_prop_2 prp_2" id="some_prop_2">This is the second value too</p>
+                <button class="testing_em_property_button btn_2">Push me!</button>
+            </div>
+        </div>
+        <div class="test_action">
+             <h2>Here is the next section</h2>
+
+            <button id="test_action">Action test</button>
+            <a href="https://berezkin88.github.io/web_tester.html" id="test-link">This is the not the link</a>
+        </div>
+         <h2 align="center">Test section... another next</h2>
+
+        <div class="three_columns_with_links">
+            <div class="first_column" id="for_testing_virtual_classes">
+                <div id="button_alike">
+                    <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
+                </div>
+            </div>
+            <div class="second_column" id="for_testing_virtual_classes">
+                <div id="button_alike">
+                    <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
+                </div>
+            </div>
+            <div class="third_column" id="for_testing_virtual_classes">
+                <div id="button_alike">
+                    <a href="#&kmi=" class="this_is_some_class_identifier">This is the link</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        // script for testing trackSubmit snippet with standart form
+        _kmq.push(['trackSubmit', '#test_standart_form', 'Submitted Standart Form']);
+    </script>
+    <script>
+        // script for testing trackSubmit snippet with not standart form
+        // _kmq.push(['trackSubmit', '#test_not_standart_form', 'Submitted Not Standart Form']);
+    </script>
+    <script>
+        $("#test_action").click(function(){
+            alert($("#test-link").attr("href"));
+        })
+    </script>
+    <script>
+        // function func() {
+        //     alert("hello");
+        // }
+    </script>
 </html>
