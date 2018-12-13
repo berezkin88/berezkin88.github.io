@@ -16,8 +16,10 @@ _kms('//i.kissmetrics.com/i.js');
 _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 
 _kmq.push(function() {
-                  let newUrl = $("#test-link").attr("href")+"?kmi="+encodeURIComponent(KM.i());
-                  $("#test-link").attr("href", newUrl)
+                  let links1 = document.getElementsByClassName("this_is_some_class_identifier");
+                  for (let i = 0; i < links1.length; i++) {
+                      links1[i].setAttribute("href", links1[i] + encodeURIComponent(KM.i()))
+                  }
           })
 $("#test-link").attr("href", newUrl)
 </script>
