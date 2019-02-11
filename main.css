@@ -1,36 +1,40 @@
 body {
     height: 6480px;
 }
-
-h2 { text-align: center; }
-
+h2 {
+    text-align: center;
+}
 div {
     display: block;
     position: relative;
 }
-.url-textfield { visibility: hidden; }
-.form-item-honey { display: none; }
+.url-textfield {
+    visibility: hidden;
+}
+.form-item-honey {
+    display: none;
+}
 .part-for-the-test-buttons {
     display: flex;
 }
-.right_part { 
-    background: red; 
+.right_part {
+    background: red;
     width: 50%;
     height: 100px;
 }
-.left_part { 
-    background: green; 
+.left_part {
+    background: green;
     width: 50%;
     height: 100px;
 }
 #right {
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
     position: relative;
     left: 50%;
     top: 50%;
 }
 .button {
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
     position: relative;
     left: 50%;
     top: 50%;
@@ -48,13 +52,16 @@ div {
     margin: 20px;
     display: flex;
 }
-#for_testing_virtual_classes{
+#for_testing_virtual_classes {
     width: 33%;
     height: 150px;
 }
-#button_alike{
+#button_alike {
     width: 100px;
     height: 50px;
     left: 50%;
     background: aqua;
+}
+.standart_form {
+    margin: 3px;
 }
