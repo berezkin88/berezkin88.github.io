@@ -50,6 +50,10 @@
             </form>
         </div>
         
+        <div class="hide_button">
+            <button id="hide">HIDE!</button>
+        </div>
+        
         <div class="outer-div">
             <main>
                 <form class="test_standart_form">
@@ -137,6 +141,10 @@
     <script>
         $("#test_action").click(function(){
             alert($("#test-link").attr("href"));
+        })
+        
+        $("#hide").on("click", function(){
+            $(".outer-div").toggle();
         })
     </script>
     <script>

@@ -65,3 +65,7 @@ div {
 .standart_form {
     margin: 3px;
 }
+
+.outer-div {
+    display: none;
+}
